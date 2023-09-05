@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+/* * {
+    margin: auto;
+    padding: 0;
+} */
+
+
+.signUp-page-container {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUp-con {
+    width: 570px;
+    height: 785px;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 4px 50px 12px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* text  */
+.signUp-heading-con {
+    margin: 20PX;
+}
+
+.signUp-heading-con h1 {
+    text-transform: capitalize;
+}
+
+.signUp-heading-con p {
+    font-size: 14px;
+}
+
+/* INPUTS  */
+.signUp-input-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 40px;
+}
+
+/* first name  */
+.first-name-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.first-name-con:hover label {
+    /* transform: scale(1.05); */
+    transition: all ease-in-out .2s;
+    color: #D82D61;
+}
+
+.first-name-con label {
+    margin: 0;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all ease-in-out .2s;
+}
+
+.first-name-con input {
+    width: 490px;
+    padding: 13px 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    border: 2px dashed #000;
+    background: #FFF;
+}
+
+/* last name  */
+.last-name-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.last-name-con:hover label {
+    /* transform: scale(1.05); */
+    transition: all ease-in-out .2s;
+    color: #D82D61;
+}
+
+.last-name-con label {
+    margin: 0;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all ease-in-out .2s;
+}
+
+.last-name-con input {
+    width: 490px;
+    padding: 13px 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    border: 2px dashed #000;
+    background: #FFF;
+}
+
+/* email  */
+.email-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.email-con:hover label {
+    /* transform: scale(1.05); */
+    transition: all ease-in-out .2s;
+    color: #D82D61;
+}
+
+.email-con label {
+    margin: 0;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all ease-in-out .2s;
+}
+
+.email-con input {
+    width: 490px;
+    padding: 13px 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    border: 2px dashed #000;
+    background: #FFF;
+}
+
+/* create pass  */
+.create-pass-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.create-pass-con:hover label {
+    /* transform: scale(1.05); */
+    transition: all ease-in-out .2s;
+    color: #D82D61;
+}
+
+.create-pass-con label {
+    margin: 0;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all ease-in-out .2s;
+}
+
+.create-pass-con input {
+    width: 490px;
+    padding: 13px 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    border: 2px dashed #000;
+    background: #FFF;
+}
+
+/* confirm pass  */
+.confirm-pass-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.confirm-pass-con:hover label {
+    /* transform: scale(1.05); */
+    transition: all ease-in-out .2s;
+    color: #D82D61;
+}
+
+.confirm-pass-con label {
+    margin: 0;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: all ease-in-out .2s;
+}
+
+.confirm-pass-con input {
+    width: 490px;
+    padding: 13px 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    border: 2px dashed #000;
+    background: #FFF;
+}
+
+.signUp-btn {
+    display: inline-flex;
+    padding: 17px 211.5px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: #3B86CC;
+    outline: none;
+    border: none;
+    /* button blur */
+    box-shadow: 0px 18px 40px -12px rgba(30, 34, 57, 0.35);
+    margin-top: 80px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+
+.signUp-btn:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out .3s;
+}

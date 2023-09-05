@@ -1,0 +1,90 @@
+.login-form-container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 789px;
+    height: 451px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    padding: 10px;
+    gap: 20px;
+}
+
+.login-form-left-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 521px;
+    height: 451px;
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 12px;
+}
+
+
+.login-form-input-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.login-login-button {
+    display: inline-flex;
+    padding: 9px 80px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+    border: 2px solid #00CAC7;
+    background: #00CAC7;
+    box-shadow: 0px 18px 20px -12px rgba(30, 34, 57, 0.35);
+    font-weight: 600;
+    color: #FFF;
+}
+
+.login-email-input {
+    width: 370px;
+    padding: 13px 16px;
+    border-radius: 6px;
+    border: 2px dashed var(--black, #000);
+    background: var(--white, #FFF);
+}
+
+.login-password-input {
+    width: 370px;
+    padding: 13px 16px;
+    border-radius: 6px;
+    border: 2px dashed var(--black, #000);
+    background: var(--white, #FFF);
+}
+
+.login-form-right-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F05365;
+    width: 268px;
+    height: 451px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #FFF;
+}
+
+.login-signup-button {
+    display: inline-flex;
+    padding: 9px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 6px;
+    border: 2px solid #00CAC7;
+    outline: none;
+    background: #FFF;
+    box-shadow: 0px 18px 20px -12px rgba(30, 34, 57, 0.35);
+}

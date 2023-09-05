@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;600;700&family=Quicksand:wght@400;600;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 40px;
+}
+
+.product-main-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.product-catagorie-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro-cat-select-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro-cat-title-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.pro-title-divider-line {
+    width: 620px;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 3px;
+}
+
+.pro-cat-select-con ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1440px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.50);
+}
+
+.pro-cat-select-con ul li {
+    cursor: pointer;
+    transition: all ease-in-out .09s
+}
+
+.pro-cat-select-con ul li:hover {
+    color: #5ABFBE;
+    /* font-size: 20px; */
+    transform: scale(1.2);
+    transition: all ease-in-out .09s;
+}
+
+.pro-card-container {
+    display: grid;
+    grid-template-columns: 320px 320px 320px 320px;
+    column-gap: 20px;
+    row-gap: 40px;
+    margin: auto;
+    /* background-color: #5ABFBE; */
+}
+
+.pro-card-1 {
+    width: 260px;
+    height: 257px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #D9D9D9;
+    transition: all ease-in-out .1s;
+    display: flex;
+    flex-direction: column;
+}
+
+.pro-card-1:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out .1s;
+}
+
+.pro-wishlist-btn-con button {
+    outline: none;
+    border: none;
+    padding: 9px 11px;
+    border-radius: 10px;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    left: 194px;
+    top: 20px;
+    transition: all ease-in-out .1s;
+    cursor: pointer;
+}
+
+.pro-wishlist-btn-con button:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out .1s;
+}
+
+.pro-card-1 h2 {
+    position: relative;
+    top: 100px;
+}
+
+.pro-cart-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: relative;
+    top: 100px;
+}
+
+.pro-cart-btn button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.pro-seemore-btn button {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all ease-in-out .1s;
+}
+
+.pro-seemore-btn button:hover {
+    color: #5ABFBE;
+    transform: scale(1.1);
+    transition: all ease-in-out .1s;
+}
+
+
+
+/* brand  */
+.pro-cat-title-brand-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.pro-cat-select-brand-con ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.50);
+    gap: 60px;
+}
+
+.pro-cat-select-brand-con ul li {
+    cursor: pointer;
+    transition: all ease-in-out .09s
+}
+
+.pro-cat-select-brand-con ul li:hover {
+    color: #5ABFBE;
+    /* font-size: 20px; */
+    transform: scale(1.2);
+    transition: all ease-in-out .09s;
+}
+
+/* banners  */
+.pro-banner-card-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.pro-banner-card {
+    display: flex;
+    width: 1260px;
+    height: 224px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.25);
+    transition: all ease-in-out .1s;
+    text-transform: capitalize;
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+    overflow: hidden;
+}
+.pro-banner-card h1{
+    position: absolute;
+    margin: auto;
+}
+
+.pro-banner-card:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out .1s;
+}

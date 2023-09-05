@@ -1,0 +1,65 @@
+:root {
+    --main-bg-color: coral;
+    --white: #fff;
+}
+
+/* maybe use grid */
+.footer-con {
+    width: 1440px;
+    /* width: 100%; */
+    height: 363px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: var(--black, #000);
+    padding: 20px 0px;
+    /* --- */
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px 0px 0px;
+}
+
+.row-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1240px;
+}
+
+.logo-title-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.footer-title h1 {
+    color: #fff;
+    font-size: 42px;
+}
+.footer-email-input {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    font-family: 'Quicksand', sans-serif;
+    gap: 2px;
+}
+.footer-email-input label{
+    color: #fff;
+    position: relative;
+    left: 6px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.footer-email-input input {
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 13px 16px;
+    width: 250px;
+}

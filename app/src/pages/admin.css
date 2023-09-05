@@ -1,0 +1,69 @@
+.admin-main-con {
+    padding: 20px;
+    width: 100;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-wrap: wrap;
+    /* background-color: bisque; */
+}
+
+.addUserForm {
+    height: fit-content;
+}
+
+.user-container {
+    display: flex;
+    gap: 140px;
+    flex-direction: row;
+}
+
+.addUserForm {
+    width: 400px;
+}
+
+.user-display {
+    width: 1100px;
+    padding: 20px;
+}
+
+.Product_managment-con {
+    margin: auto;
+    min-height: 500px;
+}
+
+.Product-title {
+    padding: 8px 300px;
+    /* background-color: #28A2D7; */
+    border: 2px solid black;
+    border-radius: 24px;
+    /* color: #fff; */
+    cursor: pointer;
+
+}
+
+.product-man-content-con {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.pro-admin-card-con {
+    margin-top: 40px;
+    width: 940px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* background-color: bisque; */
+}
+
+.addProduct-form {
+    margin-top: 40px;
+    width: 570px;
+    height: 785px;
+    border: 2px dashed black;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 4px 50px 12px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,266 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.indipro-main-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+.indipro-product-con {
+    width: 1173px;
+    height: 711px;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 30px 80px 0px rgba(0, 0, 0, 0.25);
+    padding: 0px 40px;
+}
+
+/* row 1 */
+.indipro-row-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.indipro-row-1 h1 {
+    float: left;
+}
+
+.indipro-row1-social-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    font-size: 28px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* row 2 */
+.indipro-row-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    gap: 20px;
+}
+
+.indipro-2-img-con {
+    width: 450px;
+    height: 450px;
+    border-radius: 12px;
+    background: #D9D9D9;
+}
+
+.indipro-description-con {
+    /* float: left; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.indipro-description-con h1 {
+    line-height: 0px;
+}
+
+.indipro-description-con p {
+    width: 440px;
+    text-align: left;
+}
+
+.indipro-content-con {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.indipro-content-con h1 {
+    line-height: 0px;
+}
+
+.indipro-content-con p {
+    line-height: 0px;
+}
+
+.indipro-quantity-con {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.indipro-quantity-con p {
+    color: #000;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0px;
+    text-transform: capitalize;
+}
+
+.indipro-quiatity-input input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    outline: none;
+    font-size: 18px;
+    width: 80px;
+    margin: 6px 0px;
+}
+
+/* size  */
+.indipro-size-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.indipro-size-con P {
+    font-size: 16px;
+}
+
+.size-selecter-con {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.size-selecter-con button {
+    min-width: 35px;
+    padding: 6px 8px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: #D9D9D9;
+    cursor: pointer;
+    transition: all ease-in-out .1s;
+}
+
+.size-selecter-con button:hover {
+    background-color: #F05365;
+    color: #FFF;
+    transition: all ease-in-out .1s;
+}
+
+.indipro-color-selector-con {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.indipro-color-select {
+    display: flex;
+    gap: 10px;
+}
+
+.indipro-color-select button {
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.indipro-color-select button:hover {
+    border: 2px dashed #000;
+}
+
+.color-select-shape-1 {
+    background-color: #F05365;
+}
+
+.color-select-shape-2 {
+    background-color: #53A5F0;
+}
+
+.color-select-shape-3 {
+    background-color: #C6F100;
+}
+
+/* total price  */
+.indipro-totalPrice {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* button  */
+.indipro-btn-con {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.indipro-addtocart-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #53A5F0;
+    border: none;
+    outline: none;
+    padding: 8px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all ease-in-out .1s;
+}
+.indipro-addtocart-btn:hover {
+    transform: scale(1.05);
+    transition: all ease-in-out .1s;
+}
+
+.indipro-addtocart-icon {
+    font-size: 32px;
+    color: #FFF;
+    height: 32px;
+}
+
+.indipro-addtocart-btn p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFF;
+    line-height: 0px;
+}
+
+.indipro-addwishlist-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 12px;
+    background: #D9D9D9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all ease-in-out .1s;
+}
+.indipro-addwishlist-btn:hover{
+    transform: scale(1.1);
+    transition: all ease-in-out .1s;
+}
+
+.indipro-addwishlist-icon {
+    font-size: 32px;
+    height: 32px;
+    color: #F05365;
+}

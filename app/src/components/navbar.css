@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;600;700&display=swap');
+
+.nav-container {
+    /* background-color: #D9D9D9; */
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    /* width: 1440px; */
+    width: 100%;
+}
+
+.home-box {
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.navbar_link ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+    list-style: none;
+}
+
+.navbar_link ul li {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: capitalize;
+}
+
+a.nav-link {
+    text-decoration: none;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+.nav-dropdown {
+    outline: none;
+    border: none;
+    width: 150px;
+    appearance: none;
+}
+
+.nav-dropdown option {
+    border-radius: 10px;
+    /* background-color: aqua; */
+}
+
+/* dropdown  */
+.drop-down-btn {
+    position: relative;
+    display: inline-block;
+    padding: 11px 20px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #1976d2;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.drop-down-btn-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.drop-down-btn:hover .drop-down-btn-content {
+    display: block;
+}
+
+.drop-down-btn-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    /* border-radius: 12px; */
+}
+
+.drop-down-btn-content a:hover {
+    background-color: #8abdf0;
+    /* border-radius: 12px; */
+}
+
+.drop-cart-link span{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-special-link {
+    border-top: 2px solid #acacac;
+}
+
+.drop-special-link span {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav bar buttons  */
+
+.navbar-buttons ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-buttons ul li {
+    font-size: 24px;
+}
+
+.navbar-buttons ul li:hover {
+    cursor: pointer;
+}
+
+.nav-wishlist-dropdown {
+    position: relative;
+    display: inline-block;
+    /* padding: 12px 20px; */
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+}
+.nav-wishlist-dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 400px;
+    min-height: 400px;
+    box-shadow: 0px 4px 50px 12px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    left: -100px;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff;
+}
+.nav-wishlist-dropdown-content h1 {
+    font-size: 18px;
+}
+.nav-wishlist-dropdown-img img {
+    width: 400px;
+}
+.nav-wishlist-dropdown-content button {
+    border: none;
+    outline: none;
+    background-color: #F2A73D;
+    padding: 9px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+}
+.nav-wishlist-dropdown:focus .nav-wishlist-dropdown-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

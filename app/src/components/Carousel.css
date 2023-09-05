@@ -1,0 +1,91 @@
+.carousel-container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 850px;
+    border-radius: 12px;
+    /* align-items: center; */
+    /* flex-direction: row; */
+}
+
+.image-placeholder-1 {
+    width: 1440px;
+    height: 747px;
+    background-color: #F2A73D;
+    /* border-radius: 12px; */
+}
+
+.image-placeholder-2 {
+    width: 1440px;
+    height: 747px;
+    background-color: rebeccapurple;
+}
+
+.image-placeholder-3 {
+    width: 1440px;
+    height: 747px;
+    background-color: orange;
+}
+
+.carousel-inner {
+    overflow: hidden;
+    /* border-radius: 24px; */
+    width: 1440px;
+}
+
+.cr-image-one {
+    width: 1440px;
+}
+
+.cr-btn-con {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+}
+
+.carousel-control-prev {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 8px;
+    font-size: 24px;
+    background-color: #D82D61;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    top: -520px;
+    left: 20px;
+}
+
+.carousel-control-prev span {
+    width: 24px;
+    height: 24px;
+}
+
+.carousel-control-next {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 8px;
+    font-size: 24px;
+    background-color: #D82D61;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    top: -520px;
+    right: 20px;
+}
+
+.carousel-control-next span {
+    width: 24px;
+    height: 24px;
+}
