@@ -9,6 +9,8 @@ import { Nav, Toast } from 'react-bootstrap';
 
 import HeartIllOrange from '../Icons/heartIllOrange.svg'
 
+// import Cart from '../pages/cart/cart.jsx'
+
 // MUI 
 import Tooltip from '@mui/material/Tooltip';
 import Button from '@mui/material/Button';
@@ -58,7 +60,7 @@ const Navbar = () => {
                             <button className="drop-down-btn"> Dropdown
                                 <div className="drop-down-btn-content">
                                     <a href="">Age Calculator</a>
-                                    <a href="" className="drop-cart-link">
+                                    <a href="/Cart" className="drop-cart-link">
                                         <span>
                                             <BiCart />
                                             Cart
@@ -98,7 +100,8 @@ const Navbar = () => {
                                 </button>
                             </Tooltip>
                         </li>
-                        <Nav.Link href='/checkout'>
+                        {/* // ! changed from checkout to Cart  */}
+                        <Nav.Link href='/Cart'>
                             <Tooltip title="Cart">
                                 <li><BiCart /></li>
                             </Tooltip>

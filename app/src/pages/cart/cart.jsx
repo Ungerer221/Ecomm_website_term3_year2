@@ -5,7 +5,7 @@ import './cart.css'
 
 import { BiXCircle } from 'react-icons/bi'
 
-function checkout() {
+function Cart() {
     return (
         <div className="checkout-main-con">
             <div className="checkout-con">
@@ -168,3 +168,5 @@ function checkout() {
         </div>
     );
 };
+
+export default Cart
