@@ -30,4 +30,16 @@ return(
 
 ### MUI
 
+intallation of MUI
+
+```
+npm install @mui/material @emotion/react @emotion/styled
+```
+## npm intallations 
+- react-router-dom
+- axios
+```npm i axios```
+-  mongoose
+
+
 ## components 
