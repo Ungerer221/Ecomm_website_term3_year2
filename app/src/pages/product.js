@@ -45,6 +45,7 @@ function Product() {
     const [ProductName, setProductName] = useState();
     const [ProductType, setProductType] = useState();
     const [ProductDescription, setProductDescription] = useState();
+    const [ProductStock, setProductStock] = useState();
     const [ProductPrice, setProductPrice] = useState();
     // ---
 
@@ -57,7 +58,7 @@ function Product() {
                 let productData = res.data;
                 console.log(productData);
 
-                let renderProducts = productData.map((item) => <ProductPageCard key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} price={item.price} />)
+                let renderProducts = productData.map((item) => <ProductPageCard key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} stock={item.stock} price={item.price} />)
 
                 setProduct(renderProducts);
                 setUpdateProducts(false);

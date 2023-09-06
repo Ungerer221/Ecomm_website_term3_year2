@@ -34,6 +34,7 @@ const ProductPageCard = (props) => {
     const [ProductName, setProductName] = useState(props.name);
     const [ProductType, setProductType] = useState(props.type);
     const [ProductDescription, setProductDescription] = useState(props.description);
+    const [ProductStock, setProductStock] = useState(props.stock);
     const [ProductPrice, setProductPrice] = useState(props.price);
     // console.log(props.data);
 
@@ -56,7 +57,10 @@ const ProductPageCard = (props) => {
         let value = e.target.value;
         setProductDescription(props.description);
       }
-      // maybe add wallet 
+      const getCartProductStock = (e)=>{
+        let value = e.target.value;
+        setProductStock(props.stock)
+      }
       const getCartProductPrice = (e) => {
         let value = e.target.value;
         setProductPrice(props.price);
@@ -67,6 +71,7 @@ const ProductPageCard = (props) => {
             name: ProductName,
             type: ProductType,
             description: ProductDescription,
+            stock: ProductStock,
             price: ProductPrice,
         }
 
@@ -95,6 +100,7 @@ const ProductPageCard = (props) => {
                         <h1>{props.name}</h1>
                         <p>{props.type}</p>
                         <p>{props.description}</p>
+                        <p>{props.stock}</p>
                         <h2>R:{props.price}</h2>
                     </div>
                     <div className="productPageCard-buttons">

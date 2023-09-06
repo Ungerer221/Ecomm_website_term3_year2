@@ -20,6 +20,7 @@ const ProductCard = (props) => {
     const [ProductName, setProductName] = useState(props.name);
     const [ProductType, setProductType] = useState(props.type);
     const [ProductDescription, setProductDescription] = useState(props.description);
+    const [ProductStock, setProductStock] = useState(props.stock);
     const [ProductPrice, setProductPrice] = useState(props.price);
 
     const [error, setError] = useState("");
@@ -59,7 +60,10 @@ const ProductCard = (props) => {
                         Description: {props.description}
                     </Typography>
                     <Typography variant="body2">
-                        Rrice: {props.price}
+                        Stock: {props.stock}
+                    </Typography>
+                    <Typography variant="body2">
+                        Price: {props.price}
                     </Typography>
                     <Typography component="legend">Rate:</Typography>
                     <Rating

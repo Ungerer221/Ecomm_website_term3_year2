@@ -49,6 +49,7 @@ function Admin() {
   const [ProductName, setProductName] = useState();
   const [ProductType, setProductType] = useState();
   const [ProductDescription, setProductDescription] = useState();
+  const [ProductStock, setProductStock] = useState();
   const [ProductPrice, setProductPrice] = useState();
   // ---
 
@@ -154,7 +155,7 @@ function Admin() {
         let productData = res.data;
         console.log(productData);
 
-        let renderProducts = productData.map((item) => <ProductCard refreshProducts={refreshProducts} key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} price={item.price} />)
+        let renderProducts = productData.map((item) => <ProductCard refreshProducts={refreshProducts} key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} stock={item.stock} price={item.price} />)
 
         setProduct(renderProducts);
         setUpdateProducts(false);
@@ -177,7 +178,10 @@ function Admin() {
     let value = e.target.value;
     setProductDescription(value);
   }
-  // maybe add wallet 
+  const getProductStock = (e)=>{
+    let value = e.target.value;
+    setProductStock(value);
+  }
   const getProductPrice = (e) => {
     let value = e.target.value;
     setProductPrice(value);
@@ -190,6 +194,7 @@ function Admin() {
       name: ProductName,
       type: ProductType,
       description: ProductDescription,
+      stock: ProductStock,
       price: ProductPrice,
     }
 
@@ -348,6 +353,15 @@ function Admin() {
                       label="Description short"
                       sx={{ width: "90%", }}
                       onChange={getProductDescription}
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      required
+                      id="outlined-required"
+                      label="stock"
+                      sx={{ width: "90%", }}
+                      onChange={getProductStock}
                     />
                   </Grid>
                   <Grid item xs={12}>

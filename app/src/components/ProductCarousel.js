@@ -2,6 +2,9 @@ import React from "react";
 import '../components/ProductCarousel.css'
 import {BiChevronLeft, BiChevronRight} from 'react-icons/bi'
 
+import ImageThree from '../Images/sliderthree.jpg'
+
+
 // import { imageOne } from 'app/src/Images/imageOne.jpg';
 
 const product_carousel = () => {
@@ -12,7 +15,7 @@ const product_carousel = () => {
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            {/* <img src={imageOne} alt="" class="d-block w-100" ></img> */}
+                            <img src={ImageThree} alt="" class="d-block w-100" ></img>
                             <div className="product-image-placeholder-1"></div>
                         </div>
                         <div class="carousel-item">
