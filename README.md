@@ -3,8 +3,8 @@
 
 ### mehtods for creating the Cart functionality
 
-[!Note]
-the Cart functionality doesn't work 
+>[!Note]
+>the Cart functionality doesn't work 
 
 <sup>testing super script</sup>
 
