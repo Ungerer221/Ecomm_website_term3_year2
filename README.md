@@ -19,7 +19,7 @@ function test() {
 ## code used 
 
 ### HTML
-    - html was used for setting up the structure of the website as well as the content which was set up in the `return()`
+html was used for setting up the structure of the website as well as the content which was set up in the `return()`
 ```
 return(
     <div>
