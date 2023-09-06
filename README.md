@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 <h1> Ecomm_website_term3_year2 </h1>
-=======
-<h1>Ecomm_website_term3_year2</h1> 
->>>>>>> 136df19a650611b19479146ccbe215f30551367f
  ecom site project for term 3 year 2 
 
 <h1>image here</h1>
