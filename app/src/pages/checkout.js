@@ -117,8 +117,8 @@ function Checkout() {
                         {/* // * in the video the guy has a product.js file which holds the objects  */}
                         {/* //* we have a data base that holds the same kind of information */}
                         {/* this is looping through all of our products which is coming through in the formating of our cards  */}
-                        {/* {product} */}
-                        {product.map}
+                        {product}
+                        {/* {product.map((product) =>)} */}
                     </div>
                     <p>Total:</p>
                     <button className="co-checkout-btn">Checkout</button>
