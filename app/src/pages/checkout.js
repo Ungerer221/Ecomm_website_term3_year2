@@ -20,7 +20,6 @@ function Checkout() {
     const [totalProductPrice, setTotalProductPrice] = useState();
     const [data, setData] = useState(null)
 
-
     // PRODUCT
     const [ProductName, setProductName] = useState();
     const [ProductType, setProductType] = useState();
@@ -30,7 +29,7 @@ function Checkout() {
 
     const [error, setError] = useState("");
 
-    const refreshCartProduct = (state)=>{
+    const refreshCartProduct = (state) => {
         setUpdateCartProducts(state);
     }
 
@@ -65,6 +64,13 @@ function Checkout() {
             })
     }, [])
 
+    // quick fix this should be a for loop that loops through all present objects prrice
+    // const TotalPrice = (data[0].price + data[1].price + data[2].price + data[3].price + data[4].price+ data[5].price)
+    // const [TotalPrice, setTotalPrice] = useState(data[0].price + data[1].price)
+    // let i = data.lenght
+    // for (i = 0; data.lenght.price < 0; i++) {
+    //     console.log('hey')
+    // }
     console.log(data)
 
     // todo end
@@ -147,8 +153,9 @@ function Checkout() {
                         {Cartproduct}
                         {/* {product.map((product) =>)} */}
                     </div>
-                    {/* this is where we will call the total price */}
-                    <p>Total: R{data[0].price}</p>
+                    {/* this is where we will call the total price (this is not working properly (is a quick fix)) */}
+                    <p>Total Cost: R{data[0].price + data[1].price + data[2].price + data[3].price + data[4].price}</p>
+                    {/* <p>Total Cost: R{data[0].price}</p> */}
                     <button className="co-checkout-btn">Checkout</button>
                 </div>
             </div>

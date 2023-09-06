@@ -231,7 +231,8 @@ body {
     background: #FFF;
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
     width: 483px;
-    height: 714px;
+    min-height: 714px;
+    padding: 10px 0px;
 }
 
 .co-item-con {
@@ -241,7 +242,10 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    height: 500px;
+    min-height: 500px;
+}
+.co-right-con p{
+    font-weight: 700;
 }
 
 .co-item-card {
