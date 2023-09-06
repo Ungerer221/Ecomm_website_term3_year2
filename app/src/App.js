@@ -25,6 +25,7 @@ import Footer from './components/footer'
 // toast notification
 // import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ShopContextProvider from './context/shopContext';
 
 
 function App() {
@@ -34,26 +35,34 @@ function App() {
     <div className='App'>
 
       <Navbar />
-      <Routes>
-        {/* // * when you change Home to Mian in the user && it will change the page */}
-        {/* //? check what this is doing */}
-        {user && <Route path="/" element={<Home />} />}
-        <Route path="/login" exact element={<Login />} />
-        <Route path="/signup" exact element={<Signup />} />
-        <Route path="/" element={<Navigate replace to="/login" />} />
+
+      {/* according to video the routes must be wrapped in the context provider */}
+      {/* // todo this is part of video (not needed if you dont use the video method) */}
+      {/* all of the routes inside the provider wil have access to the value we put in the provider */}
+      <ShopContextProvider>
+
+        <Routes>
+          {/* // * when you change Home to Mian in the user && it will change the page */}
+          {/* //? check what this is doing */}
+          {user && <Route path="/" element={<Home />} />}
+          <Route path="/login" exact element={<Login />} />
+          <Route path="/signup" exact element={<Signup />} />
+          <Route path="/" element={<Navigate replace to="/login" />} />
 
 
-        <Route path='/' element={<Home />} />
-        <Route path='/Product' element={<Product />} />
-        <Route path='/indipro' element={<Indipro />} />
-        <Route path='/Checkout' element={<Checkout />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/Product' element={<Product />} />
+          <Route path='/indipro' element={<Indipro />} />
+          <Route path='/Checkout' element={<Checkout />} />
 
-        {/* // * added new cart with folder route */}
-        {/* <Route path='/Cart' element={<Cart/>}/> */}
-        
-        {/* <Route path='/signUp' element={<SignUp />} /> */}
-        <Route path='/Admin' element={<AdminPage />} />
-      </Routes>
+          {/* // * added new cart with folder route */}
+          {/* <Route path='/Cart' element={<Cart/>}/> */}
+
+          {/* <Route path='/signUp' element={<SignUp />} /> */}
+          <Route path='/Admin' element={<AdminPage />} />
+        </Routes>
+
+      </ShopContextProvider>
 
       <Footer />
 

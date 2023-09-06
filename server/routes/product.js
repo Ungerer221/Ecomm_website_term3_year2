@@ -17,6 +17,13 @@ router.post('/api/addProduct/', async (req, res) => {
 router.get('/api/product', async (req, res) => {
     const findProduct = await ProductSchema.find();
     res.json(findProduct)
+});
+
+//to get specific product
+router.get('/api/product/:id' ,async (req,res)=>{
+    // const { id } = req.params._id
+    const findProduct = await ProductSchema.findById(req.params.id);
+    res.json(findProduct)
 })
 
 // DELETE

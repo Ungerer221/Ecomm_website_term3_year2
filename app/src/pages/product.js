@@ -34,6 +34,7 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 
 
+
 function Product() {
 
     const [product, setProduct] = useState();
@@ -186,8 +187,9 @@ function Product() {
                 theme="colored"
             />
 
+            {/* // todo NEW !!!! */}
             {/* //! the stuff from video */}
-            <h1>from video</h1>
+            {/* <h1>from video</h1> */}
             {/* <div className=''> {product.map((product))}</div> */}
 
         </div>

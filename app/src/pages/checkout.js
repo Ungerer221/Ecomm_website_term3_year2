@@ -7,16 +7,19 @@ import './checkout.css'
 
 import CartProductCard from "../components/CartProductCard";
 
-
+// checkout page is showing objects in the cart route and database 
+// now the btn on the product page needs to create the same object into the cart database 
 
 
 function Checkout() {
 
-    const [product, setProduct] = useState();
-    const [updateProducts, setUpdateProducts] = useState();
+    const [Cartproduct, setCartProduct] = useState();
+    const [updateCartProducts, setUpdateCartProducts] = useState();
 
     //? testing
     const [totalProductPrice, setTotalProductPrice] = useState();
+    const [data, setData] = useState(null)
+
 
     // PRODUCT
     const [ProductName, setProductName] = useState();
@@ -29,19 +32,39 @@ function Checkout() {
 
     //  PRODUCT managemanet --- --- --- !!!
     useEffect(() => {
-        Axios.get('http://localhost:5000/api/product/')
+        // Axios.get('http://loacalhost:5000/api/product/:id')
+        Axios.get('http://localhost:5000/api/Cartproduct/')
             .then(res => {
-                let productData = res.data;
-                console.log(productData);
+                let CartproductData = res.data;
+                console.log(CartproductData);
 
-                let renderProducts = productData.map((item) => <CartProductCard key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} price={item.price} />)
+                let renderProducts = CartproductData.map((item) => <CartProductCard key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} price={item.price} />)
 
-                setProduct(renderProducts);
-                setUpdateProducts(false);
+                setCartProduct(renderProducts);
+                setUpdateCartProducts(false);
 
             })
             .catch(err => console.log(err));
-    }, [updateProducts])
+    }, [updateCartProducts])
+
+    // todo new from video 
+    //  * all new from video
+    // !!!
+    // going to use this in order to get the total price 
+    // we need a for loop that runs through every product and tallys the price 
+    useEffect(() => {
+        Axios.get('http://localhost:5000/api/Cartproduct/')
+            .then((response) => {
+                setData(response.data)
+            }).catch((error) => {
+                console.log(error)
+            })
+    }, [])
+
+    console.log(data)
+
+    if (!data) return null;
+    // todo end
 
     return (
         <div className="checkout-main-con">
@@ -117,10 +140,11 @@ function Checkout() {
                         {/* // * in the video the guy has a product.js file which holds the objects  */}
                         {/* //* we have a data base that holds the same kind of information */}
                         {/* this is looping through all of our products which is coming through in the formating of our cards  */}
-                        {product}
+                        {Cartproduct}
                         {/* {product.map((product) =>)} */}
                     </div>
-                    <p>Total:</p>
+                    {/* this is where we will call the total price */}
+                    <p>Total: R{data[0].price}</p>
                     <button className="co-checkout-btn">Checkout</button>
                 </div>
             </div>

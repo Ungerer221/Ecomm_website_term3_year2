@@ -13,6 +13,9 @@
 - one is to have the it so that when to press add to cart it creats an object with the same data in the cart database which will show in the crt page 
 - two is to have the products stored on local storage upon adding it to the cart
 
+> [!NOTE]
+> the mehtod i tried using for the cart functionality, credit goes to PedroTech (https://www.youtube.com/watch?v=tEMrD9t85v4&t=1021s)
+
 ## Code Used 
 
 ### HTML

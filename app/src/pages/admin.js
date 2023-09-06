@@ -60,7 +60,7 @@ function Admin() {
     setUpdateUsers(state);
   }
   // refresh product 
-  const refreshProducts=(state)=>{
+  const refreshProducts = (state) => {
     setUpdateProducts(state)
   }
 
@@ -91,7 +91,7 @@ function Admin() {
     let value = e.target.value;
     setUserUsername(value);
   }
-  const getEmail =(e)=>{
+  const getEmail = (e) => {
     let value = e.target.value;
     setUserEmail(value);
   }
@@ -202,7 +202,6 @@ function Admin() {
       .catch(err => {
         console.log(err)
         setError(err)
-
       });
   }
 
