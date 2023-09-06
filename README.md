@@ -1,4 +1,4 @@
-# Ecomm_website_term3_year2
+<h1> Ecomm_website_term3_year2 </h1>
  ecom site project for term 3 year 2 
 
 <h1>image here</h1>
