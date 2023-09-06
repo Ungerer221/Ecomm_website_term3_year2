@@ -12,7 +12,7 @@ const CartProductCard = (props) => {
                     <div className="item-card-img"></div>
                     {/* column 2 */}
                     <div className="co-column-two">
-                        <h1>Product name</h1>
+                        <h1>{props.name}</h1>
                         <div className="co-item-size">XX</div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@ const CartProductCard = (props) => {
                     <div className="co-column-three">
                         <button className="co-item-delete"><BiXCircle /></button>
                         <div>#00</div>
-                        <div>R00.00</div>
+                        <div>R: {props.price}.00</div>
                     </div>
                 </div>
             </div>

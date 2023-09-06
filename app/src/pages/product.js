@@ -186,7 +186,9 @@ function Product() {
                 theme="colored"
             />
 
-            <div className=''> {product.map((product) => <product /> )}</div>
+            {/* //! the stuff from video */}
+            <h1>from video</h1>
+            {/* <div className=''> {product.map((product))}</div> */}
 
         </div>
     )

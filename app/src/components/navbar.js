@@ -77,8 +77,7 @@ const Navbar = () => {
                         </Nav.Link>
                         {/* end dropdown  */}
                         <Nav.Link href="/Admin">
-                            {/* // todo the admin button must show the users first two initials  */}
-                            {/* <Button variant="contained">Admin</Button> */}
+                            <Button variant="contained">Admin</Button>
                         </Nav.Link>
                     </ul>
                 </div>
@@ -119,7 +118,8 @@ const Navbar = () => {
                             </Tooltip>
                         </Nav.Link>
                         {/* //todo need to find a way to get the first initila of the user name */}
-                        <Avatar >{data.name}</Avatar>
+                        {/* // todo the admin button must show the users first two initials  */}
+                        {/* <Avatar >{data.name}</Avatar> */}
                     </ul>
                 </div>
             </div>

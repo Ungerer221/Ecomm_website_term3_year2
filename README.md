@@ -6,6 +6,10 @@
 > [!WARNING]
 > the Cart functionality does not work 
 
+## methods for creating the cart functionality
+- one is to have the it so that when to press add to cart it creats an object with the same data in the cart database which will show in the crt page 
+- two is to have the products stored on local storage upon adding it to the cart
+
 <sup>testing super script</sup>
 
 quoting code `const`
@@ -23,7 +27,7 @@ html was used for setting up the structure of the website as well as the content
 ```
 return(
     <div>
-        `main site structure`
+        main site structure
     </div>
 );
 ```
@@ -35,3 +39,5 @@ return(
 ## Utilities used 
 
 ### MUI
+
+## components 

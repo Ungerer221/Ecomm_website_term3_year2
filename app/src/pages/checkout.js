@@ -15,6 +15,9 @@ function Checkout() {
     const [product, setProduct] = useState();
     const [updateProducts, setUpdateProducts] = useState();
 
+    //? testing
+    const [totalProductPrice, setTotalProductPrice] = useState();
+
     // PRODUCT
     const [ProductName, setProductName] = useState();
     const [ProductType, setProductType] = useState();
@@ -111,9 +114,14 @@ function Checkout() {
                     <h1>Cart</h1>
                     {/* cart banners  */}
                     <div className="co-item-con">
-
-                        <button className="co-checkout-btn">Checkout</button>
+                        {/* // * in the video the guy has a product.js file which holds the objects  */}
+                        {/* //* we have a data base that holds the same kind of information */}
+                        {/* this is looping through all of our products which is coming through in the formating of our cards  */}
+                        {/* {product} */}
+                        {product.map}
                     </div>
+                    <p>Total:</p>
+                    <button className="co-checkout-btn">Checkout</button>
                 </div>
             </div>
         </div>
