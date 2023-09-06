@@ -3,14 +3,8 @@
 
 ### mehtods for creating the Cart functionality
 
->[!Note]
->the Cart functionality doesn't work 
-
-> [!IMPORTANT]
-> Crucial information necessary for users to succeed.
-
 > [!WARNING]
-> Critical content demanding immediate user attention due to potential risks.
+> the Cart functionality does not work 
 
 <sup>testing super script</sup>
 
@@ -21,3 +15,15 @@ function test() {
   console.log("notice the blank line before this function?");
 }
 ```
+
+## code used 
+
+### HTML
+
+### CSS
+
+### JS & JSX
+
+## Utilities used 
+
+### MUI
