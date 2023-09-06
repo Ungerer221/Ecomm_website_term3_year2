@@ -1,0 +1,38 @@
+.mainpage-container {
+    margin: auto;
+}
+
+.main-login-successful-con {
+    margin: auto;
+    margin-top: 40px;
+    width: 600px;
+    background-color: #d4f1ea;
+    padding: 20px;
+    border: 1px dashed #000;
+    border-radius: 24px;
+}
+
+.main-login-successful-con h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: 0;
+}
+.main-login-successful-con h3 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.main-returnhome-btn {
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 24px;
+    font-weight: 700;
+    padding: 10px 40px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.main-returnhome-btn:hover {
+    background-color: black;
+    color: #fff;
+}

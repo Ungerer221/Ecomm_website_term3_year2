@@ -4,6 +4,11 @@ import imageOne from '../Images/imageOne.jpg';
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi"
 
 const Carousel = () => {
+
+    const slides =[
+        {imageOne, Title:'hello'}
+    ]
+
     return (
         <div>
             <div className="carousel-container">

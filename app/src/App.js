@@ -3,7 +3,7 @@ import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 
 // sign up and login
-// import Main from "./components/Main";
+import Main from "./components/Main";
 import Signup from "./components/SignUp";
 import Login from "./components/Login";
 
@@ -44,13 +44,13 @@ function App() {
         <Routes>
           {/* // * when you change Home to Mian in the user && it will change the page */}
           {/* //? check what this is doing */}
-          {user && <Route path="/" element={<Home />} />}
+          {user && <Route path="/" element={<Main />} />}
           <Route path="/login" exact element={<Login />} />
           <Route path="/signup" exact element={<Signup />} />
           <Route path="/" element={<Navigate replace to="/login" />} />
 
 
-          <Route path='/' element={<Home />} />
+          <Route path='/Home' element={<Home />} />
           <Route path='/Product' element={<Product />} />
           <Route path='/indipro' element={<Indipro />} />
           <Route path='/Checkout' element={<Checkout />} />
