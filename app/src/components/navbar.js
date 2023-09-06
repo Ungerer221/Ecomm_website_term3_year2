@@ -60,7 +60,7 @@ const Navbar = () => {
                             <button className="drop-down-btn"> Dropdown
                                 <div className="drop-down-btn-content">
                                     <a href="">Age Calculator</a>
-                                    <a href="/Cart" className="drop-cart-link">
+                                    <a href="/Checkout" className="drop-cart-link">
                                         <span>
                                             <BiCart />
                                             Cart
@@ -77,7 +77,8 @@ const Navbar = () => {
                         </Nav.Link>
                         {/* end dropdown  */}
                         <Nav.Link href="/Admin">
-                            <Button variant="contained">Admin</Button>
+                            {/* // todo the admin button must show the users first two initials  */}
+                            {/* <Button variant="contained">Admin</Button> */}
                         </Nav.Link>
                     </ul>
                 </div>
@@ -101,7 +102,7 @@ const Navbar = () => {
                             </Tooltip>
                         </li>
                         {/* // ! changed from checkout to Cart  */}
-                        <Nav.Link href='/Cart'>
+                        <Nav.Link href='/Checkout'>
                             <Tooltip title="Cart">
                                 <li><BiCart /></li>
                             </Tooltip>

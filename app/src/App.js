@@ -7,14 +7,12 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import Signup from "./components/SignUp";
 import Login from "./components/Login";
 
-// cart page
-import Cart from "./pages/cart/cart.jsx"
-
 // imported pages 
 import Home from './pages/home';
 import Product from './pages/product'
 import Indipro from './pages/indipro';
-// import Checkout from './pages/checkout';
+
+import Checkout from './pages/checkout';
 // import SignUp from './pages/signUp';
 import AdminPage from './pages/admin';
 
@@ -48,10 +46,10 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/Product' element={<Product />} />
         <Route path='/indipro' element={<Indipro />} />
-        {/* <Route path='/checkout' element={<Checkout />} /> */}
+        <Route path='/Checkout' element={<Checkout />} />
 
         {/* // * added new cart with folder route */}
-        <Route path='/Cart' element={<Cart/>}/>
+        {/* <Route path='/Cart' element={<Cart/>}/> */}
         
         {/* <Route path='/signUp' element={<SignUp />} /> */}
         <Route path='/Admin' element={<AdminPage />} />

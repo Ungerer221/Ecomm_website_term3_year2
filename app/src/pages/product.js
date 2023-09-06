@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios';
+
+//carousel
 import ProductCarousel from '../components/ProductCarousel'
+//style sheet
 import '../pages/product.css'
 
 // card import 
@@ -62,14 +65,6 @@ function Product() {
             .catch(err => console.log(err));
     }, [updateProducts])
 
-    // const Item = styled(Paper)(({ theme }) => ({
-    //     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    //     ...theme.typography.body2,
-    //     padding: theme.spacing(1),
-    //     textAlign: 'center',
-    //     color: theme.palette.text.secondary,
-    //   }));
-
     // ---
 
     // toast notification const 
@@ -85,6 +80,8 @@ function Product() {
     //         theme: "colored",
     //     });
     // };
+
+    // * from video where he is working in the shop file see bottom 
 
     return (
         <div className="product-main-con">
@@ -188,6 +185,8 @@ function Product() {
                 pauseOnHover
                 theme="colored"
             />
+
+            <div className=''> {product.map((product) => <product /> )}</div>
 
         </div>
     )

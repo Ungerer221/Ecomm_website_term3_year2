@@ -1,9 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from 'react'
+import Axios from 'axios';
+
 import './checkout.css'
-import { BiXCircle } from 'react-icons/bi'
+
+// import { BiXCircle } from 'react-icons/bi'
+
+import CartProductCard from "../components/CartProductCard";
 
 
-function checkout() {
+
+
+function Checkout() {
+
+    const [product, setProduct] = useState();
+    const [updateProducts, setUpdateProducts] = useState();
+
+    // PRODUCT
+    const [ProductName, setProductName] = useState();
+    const [ProductType, setProductType] = useState();
+    const [ProductDescription, setProductDescription] = useState();
+    const [ProductPrice, setProductPrice] = useState();
+    // ---
+
+    const [error, setError] = useState("");
+
+    //  PRODUCT managemanet --- --- --- !!!
+    useEffect(() => {
+        Axios.get('http://localhost:5000/api/product/')
+            .then(res => {
+                let productData = res.data;
+                console.log(productData);
+
+                let renderProducts = productData.map((item) => <CartProductCard key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} price={item.price} />)
+
+                setProduct(renderProducts);
+                setUpdateProducts(false);
+
+            })
+            .catch(err => console.log(err));
+    }, [updateProducts])
+
     return (
         <div className="checkout-main-con">
             <div className="checkout-con">
@@ -75,90 +111,7 @@ function checkout() {
                     <h1>Cart</h1>
                     {/* cart banners  */}
                     <div className="co-item-con">
-                        {/* card */}
-                        <div className="co-item-card">
-                            <div className="co-card-left">
-                                {/* column 1  */}
-                                <div className="item-card-img"></div>
-                                {/* column 2 */}
-                                <div className="co-column-two">
-                                    <h1>Product name</h1>
-                                    <div className="co-item-size">XX</div>
-                                </div>
-                            </div>
-                            <div className="co-card-right">
-                                {/* column 3  */}
-                                <div className="co-column-three">
-                                    <button className="co-item-delete"><BiXCircle/></button>
-                                    <div>#00</div>
-                                    <div>R00.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* end */}
-                        {/* card */}
-                        <div className="co-item-card">
-                            <div className="co-card-left">
-                                {/* column 1  */}
-                                <div className="item-card-img"></div>
-                                {/* column 2 */}
-                                <div className="co-column-two">
-                                    <h1>Product name</h1>
-                                    <div className="co-item-size">XX</div>
-                                </div>
-                            </div>
-                            <div className="co-card-right">
-                                {/* column 3  */}
-                                <div className="co-column-three">
-                                    <button className="co-item-delete"><BiXCircle/></button>
-                                    <div>#00</div>
-                                    <div>R00.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* end */}
-                        {/* card */}
-                        <div className="co-item-card">
-                            <div className="co-card-left">
-                                {/* column 1  */}
-                                <div className="item-card-img"></div>
-                                {/* column 2 */}
-                                <div className="co-column-two">
-                                    <h1>Product name</h1>
-                                    <div className="co-item-size">XX</div>
-                                </div>
-                            </div>
-                            <div className="co-card-right">
-                                {/* column 3  */}
-                                <div className="co-column-three">
-                                    <button className="co-item-delete"><BiXCircle/></button>
-                                    <div>#00</div>
-                                    <div>R00.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* end */}
-                        {/* card */}
-                        <div className="co-item-card">
-                            <div className="co-card-left">
-                                {/* column 1  */}
-                                <div className="item-card-img"></div>
-                                {/* column 2 */}
-                                <div className="co-column-two">
-                                    <h1>Product name</h1>
-                                    <div className="co-item-size">XX</div>
-                                </div>
-                            </div>
-                            <div className="co-card-right">
-                                {/* column 3  */}
-                                <div className="co-column-three">
-                                    <button className="co-item-delete"><BiXCircle/></button>
-                                    <div>#00</div>
-                                    <div>R00.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* end */}
+
                         <button className="co-checkout-btn">Checkout</button>
                     </div>
                 </div>
@@ -166,4 +119,4 @@ function checkout() {
         </div>
     );
 }
-export default checkout
+export default Checkout
