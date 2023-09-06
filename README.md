@@ -15,3 +15,9 @@
 <sup>testing super script</sup>
 
 quoting code `const`
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
