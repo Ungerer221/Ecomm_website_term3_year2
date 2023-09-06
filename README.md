@@ -14,7 +14,7 @@
 - two is to have the products stored on local storage upon adding it to the cart
 
 > [!NOTE]
-> the mehtod i tried using for the cart functionality, credit goes to PedroTech (https://www.youtube.com/watch?v=tEMrD9t85v4&t=1021s)
+> the mehtod i tried with the context Provider using for the cart functionality, credit goes to PedroTech (https://www.youtube.com/watch?v=tEMrD9t85v4&t=1021s) Note: that it is not functional
 
 ## Code Used 
 
