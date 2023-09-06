@@ -1,3 +1,5 @@
+//! NOTE: not being used 
+
 import React, { createContext, useState } from "react";
 import Axios from "axios";
 import Product from "../pages/product";

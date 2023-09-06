@@ -20,6 +20,14 @@ router.get('/api/Cartproduct', async (req, res) => {
     res.json(findCartProduct)
 })
 
+// update
+router.put('/api/user/:id', async (req, res) => {
+    const { id } = req.params.id
+    await CartProductSchema.updateOne({ id }, req.body)
+        .then(response => res.json(response))
+        .catch(error => res.status(500).json(error))
+})
+
 // DELETE
 router.delete('/api/deleteCartProduct/:id', async (req, res) => {
     // const { id } = req.params._id

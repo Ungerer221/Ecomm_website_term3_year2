@@ -7,14 +7,14 @@
 ## Cart page
 
 > [!WARNING]
-> the Cart functionality does not work 
+> The Cart functionality does not work 
 
 ### Methods to use for creating the cart functionality
 - one is to have the it so that when to press add to cart it creats an object with the same data in the cart database which will show in the crt page 
 - two is to have the products stored on local storage upon adding it to the cart
 
 > [!NOTE]
-> the mehtod i tried with the context Provider using for the cart functionality, credit goes to PedroTech (https://www.youtube.com/watch?v=tEMrD9t85v4&t=1021s) Note: that it is not functional
+> The mehtod I tried with the context Provider using for the cart functionality, credit goes to PedroTech (https://www.youtube.com/watch?v=tEMrD9t85v4&t=1021s) Note: that it is not functional
 
 ## Code Used 
 

@@ -30,6 +30,10 @@ function Checkout() {
 
     const [error, setError] = useState("");
 
+    const refreshCartProduct = (state)=>{
+        setUpdateCartProducts(state);
+    }
+
     //  PRODUCT managemanet --- --- --- !!!
     useEffect(() => {
         // Axios.get('http://loacalhost:5000/api/product/:id')
@@ -63,8 +67,8 @@ function Checkout() {
 
     console.log(data)
 
-    if (!data) return null;
     // todo end
+    if (!data) return null;
 
     return (
         <div className="checkout-main-con">
