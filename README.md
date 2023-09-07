@@ -1,12 +1,24 @@
-<h1> Ecomm_website_term3_year2 :computer: </h1>
- E-comm site project for term 3 year 2 
+<h1> E-comm Website Term3 Year2 :computer: </h1>
+ E-comm site project for term 3 year 2:
+
+## Brief
+for this project we where required to develop a E-comm site that would use and store information in a database. The database that we would be using is MongoDB.
+
+## Website Requirments 
+### Home Page
+### Product Page 
+### Individual product page
+### Cart Page
+### login and sign up page and authentication 
 
 <!-- image here -->
 <picture>
     <img src='assets\coverImage.png'>
 </picture>
 
-
+## Development process
+### wireframes
+### Style Sheet
 
 ## Coding Languages Used
 ### HTML
@@ -36,7 +48,6 @@ react js and jsx was used for creating the functionality of the website
 
 
 ## Utilities used 
-
 ### MUI
 MUI is a component libray where i made use of components such as buttons, inputs as well as card compenents for the admin page of my website. 
 
