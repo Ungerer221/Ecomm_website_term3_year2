@@ -119,6 +119,8 @@ npm i mongoose mongodb
 > [!NOTE]
 > the images in the website aren't pulled from the data base 
 
+## Note
+
 > [!NOTE]
 > The mehtod I tried with the context Provider using for the cart functionality, credit goes to PedroTech (https://www.youtube.com/watch?v=tEMrD9t85v4&t=1021s) Note: that it is not functional
 
