@@ -1,20 +1,55 @@
-<h1> E-comm Website Term3 Year2 :computer: </h1>
- E-comm site project for term 3 year 2:
+# E-comm Website Term3 Year2 :computer: 
+ E-comm site project for term 3 year 2
 
-## Brief
-for this project we where required to develop a E-comm site that would use and store information in a database. The database that we would be using is MongoDB.
-
-## Website Requirments 
-### Home Page
-### Product Page 
-### Individual product page
-### Cart Page
-### login and sign up page and authentication 
-
-<!-- image here -->
+ <!-- image here -->
 <picture>
     <img src='assets\coverImage.png'>
 </picture>
+
+## Project Brief
+for this project we where required to develop a E-comm site that would use and store information in a database. The database that we would be using is MongoDB.
+
+## Website Requirments 
+- login, authentication & logout multiple users
+- Authenticate, validate and secure user profile
+- calculate the total price 
+- Inventory management 
+- Manage the income and processing of orders 
+- Provide product variations such as size, colour, quantity, etc
+
+### Home Page
+- slider
+- introduceing the website
+- newest products
+- Discounted Products
+
+### Product Page 
+- all available product 
+- view product
+- add to cart
+
+### Individual product page
+- price
+- description 
+- quantity 
+- add to cart
+- customize the product
+    - size 
+    - color
+    - quantity
+
+### Cart Page
+- checkout form 
+- checkout product list display 
+- remove product from cart
+- last minute changes 
+- total price display
+
+### login and sign up page and authentication 
+- user authentification for login
+- user account creation and store in database
+
+
 
 ## Development process
 ### wireframes
