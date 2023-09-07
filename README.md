@@ -3,6 +3,7 @@
 
 <h1>image here</h1>
 <!-- image here -->
+![coverimage.](assets\coverImage.png)
 
 ## Cart page
 
