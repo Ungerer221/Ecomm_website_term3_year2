@@ -6,11 +6,7 @@
     <img src='assets\coverImage.png'>
 </picture>
 
-> [!NOTE]
-> The mehtod I tried with the context Provider using for the cart functionality, credit goes to PedroTech (https://www.youtube.com/watch?v=tEMrD9t85v4&t=1021s) Note: that it is not functional
 
-> [!WARNING]
-> The Carousel isn't functional 
 
 ## Coding Languages Used
 ### HTML
@@ -49,13 +45,18 @@ intallation of MUI
 ```
 npm install @mui/material @emotion/react @emotion/styled
 ```
-## npm intallations 
+## Dependencies 
+a list of dependancies used in the development of this website
+
 - react-router-dom
 - axios
 ```
 npm i axios
 ```
 -  mongoose
+```
+npm i mongoose mongodb 
+```
 
 
 ## components 
@@ -63,3 +64,9 @@ npm i axios
 ## images 
 > [!NOTE]
 > the images in the website aren't pulled from the data base 
+
+> [!NOTE]
+> The mehtod I tried with the context Provider using for the cart functionality, credit goes to PedroTech (https://www.youtube.com/watch?v=tEMrD9t85v4&t=1021s) Note: that it is not functional
+
+> [!WARNING]
+> The Carousel isn't functional 
