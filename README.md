@@ -3,7 +3,9 @@
 
 <h1>image here</h1>
 <!-- image here -->
-![coverimage.](http://localhost/assets/coverImage.png)
+<picture>
+    <img src='assets\coverImage.png'>
+</picture>
 
 ## Cart page
 
