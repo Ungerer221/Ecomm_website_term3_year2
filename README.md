@@ -54,6 +54,9 @@ for this project we where required to develop a E-comm site that would use and s
 ## Development process
 ### wireframes
 ### Style Sheet
+<picture>
+    <img src='assets\Style Sheet.png'>
+</picture>
 
 ## Coding Languages Used
 ### HTML
