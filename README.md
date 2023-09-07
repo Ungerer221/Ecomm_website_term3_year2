@@ -54,3 +54,7 @@ npm i axios
 
 
 ## components 
+
+## images 
+> [!NOTE]
+> the images in the website aren't pulled from the data base 

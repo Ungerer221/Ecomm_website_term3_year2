@@ -12,7 +12,10 @@ import bannerBackground from '../Icons/bannerBackground.svg'
 import threeDShape from '../Images/3DShape.png'
 import triangleClone from '../Images/triangleclone.png'
 
+// images 
 import ImageAlt from '../Icons/imageAlt.svg'
+import Image1 from '../Images/imageOne.jpg'
+import Image2 from '../Images/a23c134ebdc47581fa854c248633a8f5.jpg'
 
 // Importing toastify module
 // import { toast } from 'react-toastify';
@@ -128,7 +131,8 @@ function Home() {
                         {/* col 1 */}
                         <div className='home-specials-column1'>
                             <div className='home-specials-column1-img'>
-                                <img src={ImageAlt} alt=''></img>
+                                <img src={Image2} alt=''></img>
+                                {/* <img src={ImageAlt} alt=''></img> */}
                             </div>
                             <h1>{data[1].name}</h1>
                         </div>
