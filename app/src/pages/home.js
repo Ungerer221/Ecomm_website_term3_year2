@@ -18,6 +18,13 @@ import Image1 from '../Images/imageOne.jpg'
 import Image2 from '../Images/a23c134ebdc47581fa854c248633a8f5.jpg'
 import Image3 from '../Images/shoes.jpg'
 import Image4 from '../Images/shoes2.jpg'
+import Image5 from '../Images/hoodie2.jpg'
+import Image6 from '../Images/pants2.jpg'
+import Image7 from '../Images/shoes2.jpg'
+import Image8 from '../Images/shoes.jpg'
+import Image9 from '../Images/pants.jpg'
+import Image10 from '../Images/sliderthree.jpg'
+
 
 
 // Importing toastify module
@@ -125,7 +132,7 @@ function Home() {
                     {/* top row  */}
                     <div className='home-specials-row1'>
                         <div className='home-specials-row1-img'>
-                            <img src={Image1} style={{width:'1200px'}} alt=''></img>
+                            <img src={Image1} style={{ width: '1200px' }} alt=''></img>
                             {/* <img src={ImageAlt} alt=''></img> */}
                         </div>
                         <h1>{data[0].name}</h1>
@@ -145,6 +152,7 @@ function Home() {
                             {/* row 1 */}
                             <div className='home-specials-col2'>
                                 <div className='home-specials-col2-img'>
+                                    <img src={Image3} alt=''></img>
                                     {/* <img src={ImageAlt} alt=''></img> */}
                                 </div>
                                 <h1>{data[2].name}</h1>
@@ -152,6 +160,7 @@ function Home() {
                             {/* row 2  */}
                             <div className='home-specials-col2'>
                                 <div className='home-specials-col2-img'>
+                                    <img src={Image4} alt=''></img>
                                     {/* <img src={ImageAlt} alt=''></img> */}
                                 </div>
                                 <h1>{data[3].name}</h1>
@@ -164,21 +173,23 @@ function Home() {
                             {/* row 1 */}
                             <div className='home-specials-col2'>
                                 <div className='home-specials-col2-img'>
-                                    <img src={ImageAlt} alt=''></img>
+                                    {/* <img src={ImageAlt} alt=''></img> */}
+                                    <img src={Image5} alt=''></img>
                                 </div>
                                 <h1>{data[4].name}</h1>
                             </div>
                             {/* row 2  */}
                             <div className='home-specials-col2'>
                                 <div className='home-specials-col2-img'>
-                                    <img src={ImageAlt} alt=''></img>
+                                    <img src={Image6} alt=''></img>
+                                    {/* <img src={ImageAlt} alt=''></img> */}
                                 </div>
                                 <h1>{data[5].name}</h1>
                             </div>
                         </div>
                         <div className='home-specials-column1'>
                             <div className='home-specials-column1-img'>
-                                <img src={ImageAlt} alt=''></img>
+                                <img src={Image7} alt=''></img>
                             </div>
                             <h1>{data[6].name}</h1>
                         </div>
@@ -188,7 +199,7 @@ function Home() {
                         {/* col 1 */}
                         <div className='home-specials-column1'>
                             <div className='home-specials-column1-img'>
-                                <img src={ImageAlt} alt=''></img>
+                                <img src={Image8} alt=''></img>
                             </div>
                             <h1>{data[7].name}</h1>
                         </div>
@@ -197,14 +208,14 @@ function Home() {
                             {/* row 1 */}
                             <div className='home-specials-col2'>
                                 <div className='home-specials-col2-img'>
-                                    <img src={ImageAlt} alt=''></img>
+                                    <img src={Image9} alt=''></img>
                                 </div>
                                 <h1>{data[8].name}</h1>
                             </div>
                             {/* row 2  */}
                             <div className='home-specials-col2'>
                                 <div className='home-specials-col2-img'>
-                                    <img src={ImageAlt} alt=''></img>
+                                    <img src={Image10} alt=''></img>
                                 </div>
                                 <h1>{data[9].name}</h1>
                             </div>

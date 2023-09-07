@@ -53,7 +53,7 @@ const Navbar = () => {
                 <div className="navbar_link">
                     <ul>
                         {/* <li>home</li> */}
-                        <Nav.Link href='/'>home</Nav.Link>
+                        <Nav.Link href='/Home'>home</Nav.Link>
                         <Nav.Link href='/product'>product</Nav.Link>
                         {/* dropdown  */}
                         <Nav.Link>

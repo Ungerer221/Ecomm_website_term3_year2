@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Axios from "axios";
 
 import './productPageCard.css'
@@ -22,6 +22,7 @@ import Typography from '@mui/material/Typography';
 // * importing the shop context
 // * from the video
 import { ShopContext } from '../context/shopContext'
+import axios from "axios";
 
 
 const style = {
@@ -107,49 +108,63 @@ const ProductPageCard = (props) => {
             })
     }
 
+    //to get product info for the Indipro page
+    // const getSingleProduct = (g) => {
+
+    //     useEffect(() => {
+
+    //         Axios.get('http://localhost:5000/api/product/:id')
+    //             .then((response) => {
+    //                 setData(response.data)
+    //             }).catch((error) => {
+    //                 console.log(error)
+    //             })
+    //     }, [])
+    // }
+
 
     return (
         <div>
 
             {/* <Modal */}
-                {/* open={open}
+            {/* open={open}
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             > */}
-                {/* <Box sx={style}> */}
-                    <div className="productPageCard-con">
-                        {/* image  */}
-                        <div className="productPageCard-img">
-                            <img src={ImageAlt} alt=""></img>
-                        </div>
-                        {/* text  */}
-                        <div className="productPageCard-content">
-                            <div className="productPageCard-info">
-                                <h1>{props.name}</h1>
-                                <p>{props.type}</p>
-                                <p>{props.description}</p>
-                                <p>{props.stock}</p>
-                                <h2>R:{props.price}</h2>
-                            </div>
-                            <div className="productPageCard-buttons">
-                                {/* <button>add to cart</button> */}
-                                <Nav.Link href="/indipro" className="">
-                                    <Button onClick={handleOpen} variant="contained" sx={{ padding: "10px 80px", borderRadius: "12px", backgroundColor: "#28A2D7" }}>View</Button>
-                                </Nav.Link>
-
-                                {/* // * modal box  */}
-
-
-
-                                {/* // todo this is the button that will add to cart  can use context api*/}
-                                {/* // ? check the video to see where the import is going */}
-                                {/* // * the button logs the name of the item its clicked */}
-                                <Button onClick={() => addCartProductToCart(console.log(props.name))} sx={{ fontSize: "24px" }}><BiCart /></Button>
-                            </div>
-                        </div>
+            {/* <Box sx={style}> */}
+            <div className="productPageCard-con">
+                {/* image  */}
+                <div className="productPageCard-img">
+                    <img src={ImageAlt} alt=""></img>
+                </div>
+                {/* text  */}
+                <div className="productPageCard-content">
+                    <div className="productPageCard-info">
+                        <h1>{props.name}</h1>
+                        <p>{props.type}</p>
+                        <p>{props.description}</p>
+                        <p>{props.stock}</p>
+                        <h2>R:{props.price}</h2>
                     </div>
-                {/* </Box> */}
+                    <div className="productPageCard-buttons">
+                        {/* <button>add to cart</button> */}
+                        <Nav.Link href="/indipro" className="">
+                            <Button variant="contained" sx={{ padding: "10px 80px", borderRadius: "12px", backgroundColor: "#28A2D7" }}>View</Button>
+                        </Nav.Link>
+
+                        {/* // * modal box  */}
+
+
+
+                        {/* // todo this is the button that will add to cart  can use context api*/}
+                        {/* // ? check the video to see where the import is going */}
+                        {/* // * the button logs the name of the item its clicked */}
+                        <Button onClick={() => addCartProductToCart(console.log(props.name))} sx={{ fontSize: "24px" }}><BiCart /></Button>
+                    </div>
+                </div>
+            </div>
+            {/* </Box> */}
             {/* </Modal> */}
         </div>
     )

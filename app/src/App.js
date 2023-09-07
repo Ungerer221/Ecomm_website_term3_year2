@@ -52,7 +52,7 @@ function App() {
 
           <Route path='/Home' element={<Home />} />
           <Route path='/Product' element={<Product />} />
-          <Route path='/indipro' element={<Indipro />} />
+          <Route path='/Indipro' element={<Indipro />} />
           <Route path='/Checkout' element={<Checkout />} />
 
           {/* // * added new cart with folder route */}

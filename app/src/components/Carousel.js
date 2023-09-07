@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 import './Carousel.css'
 // images
-import ImageOne from '../Images/imageOne.jpg';
+// import ImageOne from '../Images/imageOne.jpg';
 import ImageTwo from '../Images/slidertwo.jpg';
 // import ImageThree from '../Images/sliderthree.jpg;';
 import ImgageFour from '../Images/sliderfour.jpg';

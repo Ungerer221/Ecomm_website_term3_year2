@@ -22,7 +22,7 @@ router.get('/api/product', async (req, res) => {
 //to get specific product
 router.get('/api/product/:id' ,async (req,res)=>{
     // const { id } = req.params._id
-    const findProduct = await ProductSchema.findById(req.params.id);
+    const findProduct = await ProductSchema.findById(req.params._id);
     res.json(findProduct)
 })
 

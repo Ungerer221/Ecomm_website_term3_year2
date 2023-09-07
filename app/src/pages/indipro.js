@@ -1,15 +1,67 @@
-import React from "react";
+import React, { useState, useEffect } from 'react'
+import Axios from 'axios';
+
 import './indipro.css'
 import { BiHeart, BiLogoFacebook, BiLogoTwitter, BiLogoInstagram, BiLogoYoutube, BiBasket } from 'react-icons/bi'
 
 
-function indipro() {
+function Indipro() {
+
+    // const [data, setData] = useState(null)
+    const [data, setData] = useState()
+
+    const [product, setProduct] = useState();
+    const [updateProducts, setUpdateProducts] = useState();
+
+
+    // PRODUCT
+    const [ProductName, setProductName] = useState();
+    const [ProductType, setProductType] = useState();
+    const [ProductDescription, setProductDescription] = useState();
+    const [ProductStock, setProductStock] = useState();
+    const [ProductPrice, setProductPrice] = useState();
+    // ---
+
+    const [error, setError] = useState("");
+
+    // useEffect(() => {
+    //     Axios.get('http://localhost:5000/api/product/:id')
+    //         .then(res => {
+    //             let productData = res.data;
+    //             console.log(productData);
+
+    //             // let renderProducts = productData.map((item) => <ProductPageCard key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} stock={item.stock} price={item.price} />)
+    //             let renderProducts = productData.map()
+    //             setProduct(renderProducts);
+    //             setUpdateProducts(false);
+
+    //         })
+    //         .catch(err => console.log(err));
+    // }, [])
+
+    useEffect(() => {
+        Axios.get('http://localhost:5000/api/product/')
+            .then((response) => {
+                setData(response.data)
+            }).catch((error) => {
+                console.log(error)
+            })
+    }, [])
+
+    console.log(data)
+
+    if (!data) return null;
+
+
+    // ? figure out how to call info of the product card that the view button is clidded and display it on this page so figure out how to call specific data without data[0].name
+    // ? learn more on how to use map function without an item
+
     return (
         <div className="indipro-main-con">
             <div className="indipro-product-con">
                 {/* row 1 */}
                 <div className="indipro-row-1">
-                    <h1>Product Name</h1>
+                    <h1>{data[0].name}</h1>
                     <div className="indipro-row1-social-con">
                         <BiLogoFacebook />
                         <BiLogoTwitter />
@@ -88,4 +140,4 @@ function indipro() {
         </div>
     );
 }
-export default indipro
+export default Indipro
