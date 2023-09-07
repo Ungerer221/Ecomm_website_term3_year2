@@ -16,6 +16,9 @@ import triangleClone from '../Images/triangleclone.png'
 import ImageAlt from '../Icons/imageAlt.svg'
 import Image1 from '../Images/imageOne.jpg'
 import Image2 from '../Images/a23c134ebdc47581fa854c248633a8f5.jpg'
+import Image3 from '../Images/shoes.jpg'
+import Image4 from '../Images/shoes2.jpg'
+
 
 // Importing toastify module
 // import { toast } from 'react-toastify';
@@ -122,7 +125,8 @@ function Home() {
                     {/* top row  */}
                     <div className='home-specials-row1'>
                         <div className='home-specials-row1-img'>
-                            <img src={ImageAlt} alt=''></img>
+                            <img src={Image1} style={{width:'1200px'}} alt=''></img>
+                            {/* <img src={ImageAlt} alt=''></img> */}
                         </div>
                         <h1>{data[0].name}</h1>
                     </div>
@@ -141,14 +145,14 @@ function Home() {
                             {/* row 1 */}
                             <div className='home-specials-col2'>
                                 <div className='home-specials-col2-img'>
-                                    <img src={ImageAlt} alt=''></img>
+                                    {/* <img src={ImageAlt} alt=''></img> */}
                                 </div>
                                 <h1>{data[2].name}</h1>
                             </div>
                             {/* row 2  */}
                             <div className='home-specials-col2'>
                                 <div className='home-specials-col2-img'>
-                                    <img src={ImageAlt} alt=''></img>
+                                    {/* <img src={ImageAlt} alt=''></img> */}
                                 </div>
                                 <h1>{data[3].name}</h1>
                             </div>
