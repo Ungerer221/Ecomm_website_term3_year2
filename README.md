@@ -1,4 +1,4 @@
-<h1> Ecomm_website_term3_year2 </h1>
+<h1> Ecomm_website_term3_year2 :computer: </h1>
  E-comm site project for term 3 year 2 
 
 <!-- image here -->
