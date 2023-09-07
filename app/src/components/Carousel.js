@@ -5,16 +5,16 @@ import './Carousel.css'
 // import ImageOne from '../Images/imageOne.jpg';
 import ImageTwo from '../Images/slidertwo.jpg';
 // import ImageThree from '../Images/sliderthree.jpg;';
-import ImgageFour from '../Images/sliderfour.jpg';
+// import ImgageFour from '../Images/sliderfour.jpg';
 
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi"
-import { Slide } from 'react-toastify';
+// import { Slide } from 'react-toastify';
 
 const Carousel = () => {
     // list of objects intended for the app.js 
-    const slides =[
-        {url:'https://images.pexels.com/photos/3735641/pexels-photo-3735641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'},
-    ]
+    // const slides =[
+    //     {url:'https://images.pexels.com/photos/3735641/pexels-photo-3735641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'},
+    // ]
     // const ImageSlider = ({ slides }) => {
     // }
     // const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,7 +49,7 @@ const Carousel = () => {
                 {/* bootstrap carousel */}
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div className="carousel-item active" style={{backgroundImage:`url(${slides[0].url})`}} >
+                        <div className="carousel-item active" >
                             <img src={ImageTwo} alt="" className="cr-image-one" ></img>
                         </div>
                         <div className="carousel-item">

@@ -4,6 +4,8 @@ import Axios from 'axios';
 import './indipro.css'
 import { BiHeart, BiLogoFacebook, BiLogoTwitter, BiLogoInstagram, BiLogoYoutube, BiBasket } from 'react-icons/bi'
 
+import Image5 from '../Images/shoes2.jpg'
+
 
 function Indipro() {
 
@@ -24,20 +26,20 @@ function Indipro() {
 
     const [error, setError] = useState("");
 
-    // useEffect(() => {
-    //     Axios.get('http://localhost:5000/api/product/:id')
-    //         .then(res => {
-    //             let productData = res.data;
-    //             console.log(productData);
+    useEffect(() => {
+        Axios.get('http://localhost:5000/api/product/:id')
+            .then(res => {
+                let productData = res.data;
+                console.log(productData);
 
-    //             // let renderProducts = productData.map((item) => <ProductPageCard key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} stock={item.stock} price={item.price} />)
-    //             let renderProducts = productData.map()
-    //             setProduct(renderProducts);
-    //             setUpdateProducts(false);
+                // let renderProducts = productData.map((item) => <ProductPageCard key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} stock={item.stock} price={item.price} />)
+                let renderProducts = productData.map((item)=> item.name)
+                setProduct(renderProducts);
+                setUpdateProducts(false);
 
-    //         })
-    //         .catch(err => console.log(err));
-    // }, [])
+            })
+            .catch(err => console.log(err));
+    }, [])
 
     useEffect(() => {
         Axios.get('http://localhost:5000/api/product/')
@@ -61,7 +63,7 @@ function Indipro() {
             <div className="indipro-product-con">
                 {/* row 1 */}
                 <div className="indipro-row-1">
-                    <h1>{data[0].name}</h1>
+                    <h1 style={{textTransform:'capitalize'}}>{data[0].name}</h1>
                     <div className="indipro-row1-social-con">
                         <BiLogoFacebook />
                         <BiLogoTwitter />
@@ -72,24 +74,24 @@ function Indipro() {
                 {/* row 2 */}
                 <div className="indipro-row-2">
                     <div className="indipro-2-img-con">
-                        {/* <img src="" alt=""></img> */}
+                        <img src={Image5} alt=""  style={{width:'700px'}}></img>
                     </div>
                     <div className="indipro-2-info-con">
                         {/* description  */}
                         <div className="indipro-description-con">
                             <h1>Description:</h1>
                             <p>
-                                Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                {data[0].description}.
                             </p>
                         </div>
                         {/* what you get con */}
                         <div className="indipro-content-con">
                             {/* title  */}
-                            <h1>what you get</h1>
-                            <p>Item Name</p>
+                            <h1 style={{textTransform:'capitalize'}}>what you get</h1>
+                            <p style={{textTransform:'capitalize'}}>{data[0].name}</p>
                             {/* quantity  */}
                             <div className="indipro-quantity-con">
-                                <p>quantity</p>
+                                <p>quantity:{data[0].stock}</p>
                                 {/* input  */}
                                 <div className="indipro-quiatity-input">
                                     <input type="number" placeholder="0"></input>
@@ -117,7 +119,7 @@ function Indipro() {
                             </div>
                             {/* total price  */}
                             <div className="indipro-totalPrice">
-                                <p>Total Price: R00.00</p>
+                                <p>Total Price: R{data[0].price}.00</p>
                             </div>
                             {/* add to cart button  */}
                             <div className="indipro-btn-con">

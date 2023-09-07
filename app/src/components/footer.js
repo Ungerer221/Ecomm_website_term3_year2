@@ -1,6 +1,7 @@
 import React from "react";
 import './footer.css'
 import Logo from '../Icons/logo-white.svg'
+import { colors } from "@mui/material";
 
 const footer = () => {
     return (
@@ -8,7 +9,7 @@ const footer = () => {
             <div className="row-one">
                 <div className="logo-title-con">
                     <div className="footer-logo">
-                        <img src={Logo} alt=""></img>
+                        <img src={Logo} alt="" ></img>
                     </div>
                     <div className="footer-title">
                         <h1>Attack</h1>

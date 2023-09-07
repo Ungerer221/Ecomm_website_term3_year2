@@ -76,6 +76,10 @@ function Checkout() {
     // todo end
     if (!data) return null;
 
+    let Total = 0
+    data.map((item)=>{Total+=item.price})
+    console.log(Total)
+
     return (
         <div className="checkout-main-con">
             <div className="checkout-con">
@@ -154,8 +158,8 @@ function Checkout() {
                         {/* {product.map((product) =>)} */}
                     </div>
                     {/* this is where we will call the total price (this is not working properly (is a quick fix)) */}
-                    <p>Total Cost: R{data[0].price + data[1].price + data[2].price + data[3].price + data[4].price}</p>
-                    {/* <p>Total Cost: R{data[0].price}</p> */}
+                    {/* <p>Total Cost: R{data[0].price + data[1].price + data[2].price + data[3].price + data[4].price}</p> */}
+                    <p>Total Cost: R{Total}.00</p>
                     <button className="co-checkout-btn">Checkout</button>
                 </div>
             </div>

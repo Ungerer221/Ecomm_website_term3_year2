@@ -120,7 +120,7 @@ const Signup = () => {
                         {/* //todo check the error message styling */}
                         {error && <div className="error-msg">{error}</div>}
                         {/* // ? check if the submit works  */}
-                        <button type="submit">
+                        <button type="submit" style={{backgroundColor:'#fff', padding:'10px 20px', outline:'none', border:'2px solid black', borderRadius:'24px', cursor:'pointer'}}>
                             Sign Up
                         </button>
                     </form>
