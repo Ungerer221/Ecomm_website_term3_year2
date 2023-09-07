@@ -78,6 +78,11 @@ react js and jsx was used for creating the functionality of the website
 - one is to have the it so that when to press add to cart it creats an object with the same data in the cart database which will show in the crt page 
 - two is to have the products stored on local storage upon adding it to the cart
 
+when the add to cart button is clicked it will clone the object into the cart database where then the cart page reads the cart data and displays it into the cart
+```
+<Button onClick={() => addCartProductToCart(console.log(props.name))} sx={{ fontSize: "24px" }}><BiCart /></Button>
+```
+
 
 
 
