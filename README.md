@@ -139,6 +139,42 @@ npm i jsonwebtoken
 ```
 npm i nodemon
 ```
+<h1>Features and Functionality</h1>
+
+## Product page 
+The product page functionality is that it must call and diplay all available products in the page. 
+- The project page does this by calling info from the routes in the database using the `.get` function 
+- the page sends this info to the **Product Card Component** and then display the objects in card from in the designated are using `{products}`
+```
+useEffect(() => {
+        Axios.get('http://localhost:5000/api/product/')
+            .then(res => {
+                let productData = res.data;
+                console.log(productData);
+
+                let renderProducts = productData.map((item) => <ProductPageCard key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} stock={item.stock} price={item.price} />)
+
+                setProduct(renderProducts);
+                setUpdateProducts(false);
+
+            })
+            .catch(err => console.log(err));
+    }, [updateProducts])
+```
+The data used is set up using `useState` as `const` variables.
+```
+// DATA
+const [product, setProduct] = useState();
+const [updateProducts, setUpdateProducts] = useState();
+
+
+// PRODUCT
+const [ProductName, setProductName] = useState();
+const [ProductType, setProductType] = useState();
+const [ProductDescription, setProductDescription] = useState();
+const [ProductStock, setProductStock] = useState();
+const [ProductPrice, setProductPrice] = useState();
+```
 
 ## Cart page
 
