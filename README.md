@@ -300,3 +300,12 @@ Conponents list
 
 > [!WARNING]
 > The Carousel isn't functional 
+
+## Summary
+### Highlights:
+- Creating the E-comm site 
+- Getting all the routing and axios calls right and actually displaying the Card components in the designated pages.
+- Adding the Little touches like:
+    - tool tips
+    - dropdown functions
+    - toast notifications
