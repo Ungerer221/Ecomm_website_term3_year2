@@ -94,50 +94,50 @@ npm install @mui/material @emotion/react @emotion/styled
 ## Dependencies to INSTALL
 a list of dependancies used in the development of this website
 
-- react & react-router-dom (main)
+- react & react-router-dom **(main)**
 ```
 npm i react react-router-dom
 ```
-- axios (main)
+- axios **(main)**
 ```
 npm i axios
 ```
-- react-icons (main)
+- react-icons **(main)**
 ```
 npm i react-icons
 ```
-- MUI kit
+- MUI kit **(main)**
 ```
 npm i @mui/material @emotion/react @emotion/styled
 ```
--  mongoose & mongodb (server)
+-  mongoose & mongodb **(server)**
 <!-- used for connecting to the mongo database -->
 ```
 npm i mongoose mongodb 
 ```
-- express (server)
+- express **(server)**
 ```
 npm i express
 ```
-- cors (server)
+- cors **(server)**
 ```
 npm i cors
 ```
-- dotenv (server)
+- dotenv **(server)**
 ```
 npm i dotenv
 ```
-- joi & joi-password-complexity (server)
+- joi & joi-password-complexity **(server)**
 ```
 npm i joi joi-password-complexity
 ```
-- jsonwebtoken (server)
+- jsonwebtoken **(server)**
 ```
-npm i jsonwebtoken (server)
+npm i jsonwebtoken 
 ```
-- nodemon
+- nodemon **(server)**
 ```
-npm i nodemon (server)
+npm i nodemon
 ```
 
 ## Cart page
