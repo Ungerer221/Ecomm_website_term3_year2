@@ -278,7 +278,16 @@ router.put('/api/user/:id', async (req, res) => {
 })
 ```
 
-## components 
+## Components 
+Conponents list
+- Product Card
+- User Card
+- Carousel
+- Login page
+- Signup page
+- Footer
+- Navbar
+- ToastNote
 
 ## images 
 > [!NOTE]
