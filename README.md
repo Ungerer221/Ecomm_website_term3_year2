@@ -51,7 +51,7 @@ for this project we where required to develop a E-comm site that would use and s
 
 
 
-## Development process
+<h2 align='center'> Development process </h2>
 ### wireframes
 ### Style Sheet
 <picture>
