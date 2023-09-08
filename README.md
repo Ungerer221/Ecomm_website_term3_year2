@@ -52,6 +52,7 @@ for this project we where required to develop a E-comm site that would use and s
 
 
 <h2> Development process </h2>
+
 ### wireframes
 ### Style Sheet
 <picture align='center'>
