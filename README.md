@@ -141,6 +141,17 @@ npm i nodemon
 ```
 <h1>Features and Functionality</h1>
 
+## Home Page 
+the home page funcionality is that it must simple show the top 10 products for sale.
+Calling data and then displaying each individual object
+```
+const [data, setData] = useState(null)
+```
+displaying the data
+```
+{data[0].name}
+```
+
 ## Product page 
 The product page functionality is that it must call and diplay all available products in the page. 
 - The project page does this by calling info from the routes in the database using the `.get` function 
@@ -200,6 +211,72 @@ useEffect(() => {
 **Button**
 ```
 <Button onClick={() => addCartProductToCart(console.log(props.name))} sx={{ fontSize: "24px" }}><BiCart /></Button>
+```
+
+## Admin (server)-side
+
+### Mongo Connection
+
+```
+mongoose.connect(process.env.DB_CONNECTION, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    dbName: 'testingform', //Collection Name | this will show up on your mogoose DB | the name pay attention to line underneath
+}).then(() => console.log("Connected to testingform DB"))
+    .catch((err) => {
+        console.log("No Connection. Reason: " + err);
+    });
+
+//! maybe dont change to 5000 check this but its not the cause 
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => { console.log(`Server Started on port:${PORT}`) });
+```
+
+### Server routes
+Adding the product with a `.post`
+```
+// adding a product
+router.post('/api/addProduct/', async (req, res) => {
+    const product = new ProductSchema({ ...req.body })
+    await product.save()
+        .then(response => res.json(response))
+        .catch(error => res.status(500).json(error))
+});
+```
+Fetching the product: `.get`
+```
+// to get product 
+router.get('/api/product', async (req, res) => {
+    const findProduct = await ProductSchema.find();
+    res.json(findProduct)
+});
+
+//to get specific product
+router.get('/api/product/:id' ,async (req,res)=>{
+    // const { id } = req.params._id
+    const findProduct = await ProductSchema.findById(req.params._id);
+    res.json(findProduct)
+})
+```
+Delete function: `.delete`
+```
+// DELETE
+router.delete('/api/deleteProduct/:id', async (req, res) => {
+    // const { id } = req.params._id
+    await ProductSchema.findByIdAndDelete(req.params.id)
+        .then(response => res.json(response))
+        .catch(error => res.status(500).json(error))
+})
+```
+Updating the user: `.put`
+```
+router.put('/api/user/:id', async (req, res) => {
+    const { id } = req.params.id
+    await UserSchema.updateOne({ id }, req.body)
+        .then(response => res.json(response))
+        .catch(error => res.status(500).json(error))
+})
 ```
 
 ## components 
