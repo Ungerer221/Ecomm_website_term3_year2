@@ -324,3 +324,6 @@ Conponents list
 - cart badges 
 - admin authentication 
 - snake bar feature 
+
+# Conclusion 
+In conclusion i have developed a semi functional E-comm site with a working cart and product page and a functional admin page.
