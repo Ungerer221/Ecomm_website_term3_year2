@@ -6,7 +6,7 @@
     <img src='assets\coverImage.png'>
 </picture>
 
-## Project Brief
+<h2 align='center'> Project Brief </h2>
 for this project we where required to develop a E-comm site that would use and store information in a database. The database that we would be using is MongoDB.
 
 ## Website Requirments 
