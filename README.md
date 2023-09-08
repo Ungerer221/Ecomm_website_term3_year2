@@ -53,7 +53,8 @@ for this project we where required to develop a E-comm site that would use and s
 
 <h2> Development process </h2>
 
-### wireframes
+<!-- ### wireframes -->
+
 ### Style Sheet
 <picture align='center'>
     <img src='assets\Style Sheet.png'>
@@ -74,9 +75,14 @@ return(
 css what the main code used for styling the website
 
 ### JS / JSX
-react js and jsx was used for creating the functionality of the website 
+react js and jsx was used for creating the functionality of the website
 
-## Utilities used 
+<h3>Prerequisites</h3>
+1. Node js
+2. MongoDb account and a cluster
+3. Insomnia: for Crud functionaility testing
+
+## Utilities Used 
 ### MUI
 MUI is a component libray where i made use of components such as buttons, inputs as well as card compenents for the admin page of my website. 
 
@@ -85,10 +91,13 @@ intallation of MUI
 ```
 npm install @mui/material @emotion/react @emotion/styled
 ```
-## Dependencies 
+## Dependencies to INSTALL
 a list of dependancies used in the development of this website
 
-- react-router-dom
+- react & react-router-dom
+```
+npm i react react-router-dom
+```
 - axios
 ```
 npm i axios
@@ -97,6 +106,31 @@ npm i axios
 ```
 npm i mongoose mongodb 
 ```
+- express
+```
+npm i express
+```
+- cors
+```
+npm i cors
+```
+- dotenv
+```
+npm i dotenv
+```
+- joi & joi-password-complexity
+```
+npm i joi joi-password-complexity
+```
+- jsonwebtoken
+```
+npm i jsonwebtoken
+```
+- nodemon
+```
+npm i nodemon 
+```
+
 ## Cart page
 
 ### Methods to use for creating the cart functionality
