@@ -146,7 +146,22 @@ npm i nodemon
 - one is to have the it so that when to press add to cart it creats an object with the same data in the cart database which will show in the crt page 
 - two is to have the products stored on local storage upon adding it to the cart
 
-when the add to cart button is clicked it will clone the object into the cart database where then the cart page reads the cart data and displays it into the cart
+Method used:
+when the add to cart button is clicked it will clone the object (using the post axios function) into the cart database where then the cart page reads the cart data and displays it into the cart page.
+
+**Axios call**
+```
+useEffect(() => {
+        Axios.get('http://localhost:5000/api/Cartproduct/')
+            .then((response) => {
+                setData(response.data)
+            }).catch((error) => {
+                console.log(error)
+            })
+    }, [])
+```
+
+**Button**
 ```
 <Button onClick={() => addCartProductToCart(console.log(props.name))} sx={{ fontSize: "24px" }}><BiCart /></Button>
 ```
@@ -160,7 +175,7 @@ when the add to cart button is clicked it will clone the object into the cart da
 ## Note
 
 > [!NOTE]
-> The mehtod I tried with the context Provider using for the cart functionality, credit goes to PedroTech (https://www.youtube.com/watch?v=tEMrD9t85v4&t=1021s) Note: that it is not functional
+> The mehtod I tried using but turned unsuccessful for this project with the context Provider using for the cart functionality, credit goes to PedroTech (https://www.youtube.com/watch?v=tEMrD9t85v4&t=1021s) Note: that it is not functional
 
 > [!WARNING]
 > The Carousel isn't functional 
