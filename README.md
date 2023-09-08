@@ -221,13 +221,12 @@ useEffect(() => {
 mongoose.connect(process.env.DB_CONNECTION, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    dbName: 'testingform', //Collection Name | this will show up on your mogoose DB | the name pay attention to line underneath
-}).then(() => console.log("Connected to testingform DB"))
+    dbName: '`DBname`', //Collection Name | this will show up on your mogoose DB | the name pay attention to line underneath
+}).then(() => console.log("Connected to DBname"))
     .catch((err) => {
         console.log("No Connection. Reason: " + err);
     });
 
-//! maybe dont change to 5000 check this but its not the cause 
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => { console.log(`Server Started on port:${PORT}`) });
