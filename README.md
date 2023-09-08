@@ -2,7 +2,7 @@
  E-comm site project for term 3 year 2
 
  <!-- image here -->
-<picture>
+<picture align='center'>
     <img src='assets\coverImage.png'>
 </picture>
 
@@ -54,7 +54,7 @@ for this project we where required to develop a E-comm site that would use and s
 <h2 align='center'> Development process </h2>
 ### wireframes
 ### Style Sheet
-<picture>
+<picture align='center'>
     <img src='assets\Style Sheet.png'>
 </picture>
 
