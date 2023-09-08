@@ -309,3 +309,18 @@ Conponents list
     - tool tips
     - dropdown functions
     - toast notifications
+
+### Challanges:
+- getting the cart functionality to work 
+- setting up the login and sign up registration and authentication 
+- getting the individual product page to display selected product data
+
+## Future Implementations 
+- Fully functional wishlist
+- proper login & signup notifications
+- checkout Notification
+- add to cart completed notification 
+- better site responsivness 
+- cart badges 
+- admin authentication 
+- snake bar feature 
