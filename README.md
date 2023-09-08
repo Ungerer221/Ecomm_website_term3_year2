@@ -1,4 +1,4 @@
-# E-comm Website Term3 Year2 :computer: 
+# <align="center"> E-comm Website Term3 Year2 :computer: 
  E-comm site project for term 3 year 2
 
  <!-- image here -->
