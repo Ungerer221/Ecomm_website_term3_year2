@@ -1,5 +1,5 @@
 <h1 align='center'> E-comm Website Term3 Year2 :computer: </h1>
- E-comm site project for term 3 year 2 by Ungerer Hattingh
+ E-comm site project for term 3 year 2
 
  <!-- image here -->
 <picture align='center'>
