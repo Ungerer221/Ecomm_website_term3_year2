@@ -21,6 +21,7 @@ const ProductCard = (props) => {
     const [ProductType, setProductType] = useState(props.type);
     const [ProductDescription, setProductDescription] = useState(props.description);
     const [ProductStock, setProductStock] = useState(props.stock);
+    const [ProductSize, setProductSize] = useState(props.size);
     const [ProductPrice, setProductPrice] = useState(props.price);
 
     const [error, setError] = useState("");
@@ -61,6 +62,9 @@ const ProductCard = (props) => {
                     </Typography>
                     <Typography variant="body2">
                         Stock: {props.stock}
+                    </Typography>
+                    <Typography variant="body2" sx={{textTransform:'capitalize'}}>
+                        Size: {props.size}
                     </Typography>
                     <Typography variant="body2">
                         Price: {props.price}

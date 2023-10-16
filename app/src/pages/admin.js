@@ -50,9 +50,9 @@ function Admin() {
   const [ProductType, setProductType] = useState();
   const [ProductDescription, setProductDescription] = useState();
   const [ProductStock, setProductStock] = useState();
-  const [ProductPrice, setProductPrice] = useState();
   // ! new 
   const [ProductSize, setProductSize] = useState();
+  const [ProductPrice, setProductPrice] = useState();
   // ---
 
   const [error, setError] = useState("");
@@ -162,7 +162,7 @@ function Admin() {
         let productData = res.data;
         console.log(productData);
 
-        let renderProducts = productData.map((item) => <ProductCard refreshProducts={refreshProducts} key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} stock={item.stock} price={item.price} />)
+        let renderProducts = productData.map((item) => <ProductCard refreshProducts={refreshProducts} key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} size={item.size} stock={item.stock} price={item.price} />)
 
         setProduct(renderProducts);
         setUpdateProducts(false);
@@ -189,13 +189,11 @@ function Admin() {
     let value = e.target.value;
     setProductStock(value);
   }
-
   // new 
   const getProductSize = (e)=> {
     let value = e.target.value;
-    setProductSize(value)
+    setProductSize(value);
   }
-
   const getProductPrice = (e) => {
     let value = e.target.value;
     setProductPrice(value);
@@ -209,6 +207,7 @@ function Admin() {
       type: ProductType,
       description: ProductDescription,
       stock: ProductStock,
+      // new 
       size: ProductSize,
       price: ProductPrice,
     }
@@ -278,7 +277,6 @@ function Admin() {
               }}
               onChange={getEmail}
             />
-            {/* add size text field  */}
             <TextField
               required
               id="outlined-required"
@@ -378,6 +376,15 @@ function Admin() {
                       label="stock"
                       sx={{ width: "90%", }}
                       onChange={getProductStock}
+                    />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <TextField
+                      required
+                      id="outlined-required"
+                      label="Size"
+                      sx={{ width: "90%", }}
+                      onChange={getProductSize}
                     />
                   </Grid>
                   <Grid item xs={12}>

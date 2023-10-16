@@ -57,6 +57,7 @@ const ProductPageCard = (props) => {
     const [ProductType, setProductType] = useState(props.type);
     const [ProductDescription, setProductDescription] = useState(props.description);
     const [ProductStock, setProductStock] = useState(props.stock);
+    const [ProductSize, setProductSize] = useState(props.size);
     const [ProductPrice, setProductPrice] = useState(props.price);
     // console.log(props.data);
 
@@ -83,6 +84,10 @@ const ProductPageCard = (props) => {
         let value = e.target.value;
         setProductStock(props.stock)
     }
+    const getCartProductSize = (e) =>{
+        let value = e.target.value;
+        setProductSize(props.size)
+    }
     const getCartProductPrice = (e) => {
         let value = e.target.value;
         setProductPrice(props.price);
@@ -94,6 +99,7 @@ const ProductPageCard = (props) => {
             type: ProductType,
             description: ProductDescription,
             stock: ProductStock,
+            size: ProductSize,
             price: ProductPrice,
         }
 
