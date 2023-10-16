@@ -130,7 +130,6 @@ function Admin() {
         setUserEmail('');
         setUserPassword('');
         // do the rest of the states 
-
       })
       .catch(err => {
         console.log(err)
