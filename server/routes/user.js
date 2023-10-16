@@ -47,8 +47,7 @@ router.get('/api/user/', async (req, res) => {
 
 
 router.put('/api/user/:id', async (req, res) => {
-    const { id } = req.params.id
-    await UserSchema.updateOne({ id }, req.body)
+    await UserSchema.updateOne({ _id: req.params.id }, req.body)
         .then(response => res.json(response))
         .catch(error => res.status(500).json(error))
 })

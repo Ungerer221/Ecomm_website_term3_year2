@@ -41,7 +41,7 @@ function Checkout() {
                 let CartproductData = res.data;
                 console.log(CartproductData);
 
-                let renderProducts = CartproductData.map((item) => <CartProductCard key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} price={item.price} />)
+                let renderProducts = CartproductData.map((item) => <CartProductCard refreshCartProduct={refreshCartProduct} key={item._id} id={item._id} name={item.name} type={item.type} description={item.description} price={item.price} />)
 
                 setCartProduct(renderProducts);
                 setUpdateCartProducts(false);

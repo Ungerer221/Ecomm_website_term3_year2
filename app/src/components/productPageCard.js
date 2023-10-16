@@ -145,6 +145,9 @@ const ProductPageCard = (props) => {
                         <p>{props.type}</p>
                         <p>{props.description}</p>
                         <p>Stock left: {props.stock}</p>
+                        {/* new  */}
+                        <p>sizes Available:{props.size}</p>
+                        {/* ---  */}
                         <h2>R:{props.price}</h2>
                     </div>
                     <div className="productPageCard-buttons">

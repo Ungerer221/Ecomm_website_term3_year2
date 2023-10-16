@@ -51,6 +51,8 @@ function Admin() {
   const [ProductDescription, setProductDescription] = useState();
   const [ProductStock, setProductStock] = useState();
   const [ProductPrice, setProductPrice] = useState();
+  // ! new 
+  const [ProductSize, setProductSize] = useState();
   // ---
 
   const [error, setError] = useState("");
@@ -122,6 +124,12 @@ function Admin() {
       .then(res => {
         console.log(res.data)
         setUpdateUsers(true);
+        setUserName("");
+        setUserSurname("");
+        setUserUsername('');
+        setUserEmail('');
+        setUserPassword('');
+        // do the rest of the states 
 
       })
       .catch(err => {
@@ -182,6 +190,13 @@ function Admin() {
     let value = e.target.value;
     setProductStock(value);
   }
+
+  // new 
+  const getProductSize = (e)=> {
+    let value = e.target.value;
+    setProductSize(value)
+  }
+
   const getProductPrice = (e) => {
     let value = e.target.value;
     setProductPrice(value);
@@ -195,6 +210,7 @@ function Admin() {
       type: ProductType,
       description: ProductDescription,
       stock: ProductStock,
+      size: ProductSize,
       price: ProductPrice,
     }
 
@@ -263,6 +279,7 @@ function Admin() {
               }}
               onChange={getEmail}
             />
+            {/* add size text field  */}
             <TextField
               required
               id="outlined-required"
