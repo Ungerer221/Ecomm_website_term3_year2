@@ -51,14 +51,27 @@ for this project we where required to develop a E-comm site that would use and s
 
 
 
-<h2> Development process </h2>
+<h1> Development process </h1>
 
 <!-- ### wireframes -->
 
-### Style Sheet
+## Style Sheet
 <picture align='center'>
     <img src='assets\Style Sheet.png'>
 </picture>
+
+## Wireframe
+### Home Page
+<img src='assets\home page.png'>
+
+### Product Page
+<img src='assets\product page.png'>
+
+### Individual Product Page
+<img src='assets\individual product page.png'>
+
+### Checkout Page
+<img src='assets\checkout page.png'>
 
 ## Built With
 ### HTML
