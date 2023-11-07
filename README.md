@@ -9,6 +9,9 @@
 <h2 align='center'> Project Brief </h2>
 for this project we where required to develop a E-comm site that would use and store information in a database. The database that we would be using is MongoDB.
 
+## Website Demo Video
+https://drive.google.com/file/d/1wDprUcLFZLvC8fx9VL_8cnMpl5kLp70m/view?usp=drive_link
+
 ## Website Requirments 
 - login, authentication & logout multiple users
 - Authenticate, validate and secure user profile
